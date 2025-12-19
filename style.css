@@ -47,13 +47,12 @@ header {
 footer {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1em;
     text-align: center;
     grid-column: 1 / -1;
-    background-color: #333;
-    color: rgb(0, 0, 0);
+    background-color: #000000;
+    color: rgb(255, 255, 255);
     padding: .5em;
-    background-color: rgb(225, 182, 211);
     background-size: cover;
     background-repeat:no-repeat;
 }
@@ -66,27 +65,48 @@ main {
     background-color:#000000;
 }
 
-.navvy ul li:hover {
-    color: yellow;
+.navvy {
+    display: flex;               /* make nav a flex container */
+    justify-content: center;     /* center horizontally */
+    align-items: center;         /* vertically center if nav has height */
+    font-size: 1.5em;
+    line-height: 1.75em;
+    color: #4983ff;
+    border-radius: 1em;
+    padding: 10px 0;    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+                 'Lucida Sans', Arial, sans-serif;         
+}
+
+.navvy ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;               /* horizontal list items */
+    gap: 2em;                    /* spacing between links */
+}
+
+.navvy ul li a {
+    text-decoration: none;
+    color: rgb(104, 40, 207);
+    transition: color 0.3s;
+}
+
+.navvy ul li:hover a {
+    color: rgb(0, 251, 255);
     text-decoration: underline;
 }
 
-nav {
-    border-radius: 1em;
-    font-size: 2em;
-    line-height: 1.75em;
-    color:  #4983ff;
-}
 
 nav.bio {
-    background-image: url("koala.jpg");
+    background-image: url("../images/koala.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
-    min-height: 200px;   /* critical */
-    padding: 20px;
-
+    border: 3px solid #3f3f3f; 
+    border-radius: 3px; 
+    min-height: 100px;   
+    padding: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
                  'Lucida Sans', Arial, sans-serif;
 }
@@ -224,24 +244,6 @@ caption {
     background-clip: text;
     color: transparent;
 }
-
-/*@media only screen and (max-width: 2450px) {
-    .author-info {
-        padding: 0 0 2em 2em; 
-    }
-
-    .author-info {
-        background-image: none;
-    }
-}
-
-@media screen and (max-width: 500px) {
-   
-    main {
-        grid-template-columns: 1fr; 
-    }
-}
-    */
 
 
 

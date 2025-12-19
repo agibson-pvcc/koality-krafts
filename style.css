@@ -79,7 +79,7 @@ nav {
 }
 
 nav.bio {
-    background-image: url("../koala.jpg");
+    background-image: url("koala.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -242,5 +242,6 @@ caption {
     }
 }
     */
+
 
 

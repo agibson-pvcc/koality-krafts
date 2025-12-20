@@ -108,7 +108,7 @@ main {
 
 nav.bio {
     height: auto;
-    background-image: url("../images/koala.jpg");
+    background-image: url("koala.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -301,6 +301,7 @@ caption {
 body {
     overflow-x: hidden;
 }
+
 
 
 
